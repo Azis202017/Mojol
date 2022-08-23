@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:mojol/app/shared/color.dart';
-import 'package:mojol/app/shared/fonts.dart';
+import 'package:mojol/app/routes/app_pages.dart';
 
-import '../../../routes/app_pages.dart';
+import '../../../shared/color.dart';
+import '../../../shared/fonts.dart';
 import '../../../widgets/input_widget.dart';
-import '../controllers/signup_controller.dart';
+import '../controllers/signin_controller.dart';
 
-class SignupView extends GetView<SignupController> {
-  const SignupView({Key? key}) : super(key: key);
+class SigninView extends GetView<SigninController> {
+  const SigninView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Sign Up',
+          'Sign In',
           style: heading1,
         ),
-        backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
         centerTitle: true,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -32,18 +32,6 @@ class SignupView extends GetView<SignupController> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 7.0),
-                child: Text(
-                  'Name',
-                  style: heading3,
-                ),
-              ),
-              const SizedBox(height: 7),
-              InputForm(
-                controller: controller.nameTextEdtController,
-              ),
-              const SizedBox(height: 16),
               Padding(
                 padding: const EdgeInsets.only(left: 7.0),
                 child: Text(
@@ -77,11 +65,9 @@ class SignupView extends GetView<SignupController> {
                 height: 60,
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {
-                    controller.registerUser();
-                  },
+                  onPressed: () {},
                   child: Text(
-                    'Sign Up',
+                    'Sign In',
                     style: heading3,
                   ),
                 ),
@@ -90,17 +76,17 @@ class SignupView extends GetView<SignupController> {
               Center(
                 child: TextButton(
                   onPressed: () {
-                    Get.toNamed(Routes.SIGNIN);
+                    Get.toNamed(Routes.SIGNUP);
                   },
                   child: RichText(
                     text: TextSpan(
-                      text: 'Already have an account? ',
+                      text: 'Don’t have an account?  ',
                       style: textReg15.copyWith(
                         color: greyColor2,
                       ),
                       children: [
                         TextSpan(
-                          text: 'Sign In',
+                          text: 'Sign Up',
                           style: textReg15.copyWith(
                             color: deepBlue,
                             decoration: TextDecoration.underline,

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "195869681273",
+    "project_id": "mojol-db278",
+    "storage_bucket": "mojol-db278.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195869681273:android:f93012f18e04e4b5c656a8",
+        "android_client_info": {
+          "package_name": "com.abdulazisalayubbi.mojol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195869681273-t236ee2pmq4no3ch4qb26elscvfqpssp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZt_gt9AFAJZ24FNVMF582senXDnF82VA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195869681273-t236ee2pmq4no3ch4qb26elscvfqpssp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
